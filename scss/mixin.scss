@@ -1,0 +1,27 @@
+@mixin title{
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  text-align: center;
+
+  .title__name {
+    margin-bottom: 10px;
+
+    font-family: $font-family-text-bolder;
+    font-size: $font-size-xxl;
+  }
+
+  .title__text {
+    font-size: $font-size-md;
+    color: $color-gray;
+  }
+
+  @media ( min-width: 960px) {
+  padding-top: 111px;
+
+  .title__name {
+    margin-bottom: 12px;
+  }
+  }
+}

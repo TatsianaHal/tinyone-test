@@ -1,0 +1,64 @@
+.features {
+
+  .title {
+    @include title;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    display: flex;
+    width: 90%;
+    margin: 0 auto 40px;
+  }
+
+  &__icon {
+    width: 43px;
+    margin-right: 15px;
+
+    background-image: url(../img/iphone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__info {
+    width: calc(100% - 43px - 15px);
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 10px;
+
+    font-family: $font-family-text-bolder;
+    font-size: $font-size-lg;
+  }
+
+  &__text {
+    display: block;
+
+    font-size: $font-size-sm;
+    color: $color-gray;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media ( min-width: 960px) {
+.features {
+  margin-bottom: 28px;
+
+  .title {
+    margin-bottom: 86px;
+  }
+
+  &__item {
+    width: calc(33% - 30px);
+    margin: 0 15px 95px;
+  }
+}
+}

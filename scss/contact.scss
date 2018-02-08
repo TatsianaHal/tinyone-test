@@ -1,0 +1,142 @@
+.contact {
+  padding-bottom: 20px;
+
+  .title {
+    @include title;
+    margin-bottom: 40px;
+  }
+
+  &__row_flex {
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.contact-item {
+  width: 100%;
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__icon {
+    padding-bottom: 18px;
+
+    font-size: $font-size-lg;
+  }
+
+  &__name {
+    font-size: $font-size-xl;
+  }
+
+  &__text {
+    font-size: $font-size-xs;
+    color: $color-gray;
+  }
+}
+
+.contact-form {
+  width: calc( 100% - 30px);
+  margin: 0 auto;
+
+  color: $color-gray;
+
+  &__email {
+    display: block;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 24px;
+    padding-left: 18px;
+
+    font-size: $font-size-sm;
+
+    border:2px solid #030303;
+  }
+
+  &__name {
+    display: block;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 24px;
+    padding-left: 18px;
+
+    font-size: $font-size-sm;
+
+    border:2px solid #030303;
+  }
+
+  &__message {
+    display: block;
+    width: 100%;
+    height: 210px;
+    margin-bottom: 24px;
+    padding-top: 14px;
+    padding-left: 18px;
+
+    font-size: $font-size-sm;
+
+    border:2px solid #030303;
+  }
+
+  &__btn {
+    width: 170px;
+    height: 50px;
+    margin: 0 auto;
+
+    color: white;
+
+    background-color: #030303;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media ( min-width: 960px) {
+  .contact {
+    margin-bottom: 70px;
+
+    .title {
+      margin-bottom: 50px;
+    }
+
+    &__row_flex {
+      justify-content: space-between;
+      width: 76%;
+      margin: 0 auto 40px;
+    }
+  }
+
+  .contact-item {
+    width: 33%;
+  }
+
+  .contact-form {
+    width: 480px;
+
+    &__email {
+      width: 480px;
+    }
+
+    &__name {
+      width: 480px;
+    }
+
+    &__message {
+      width: 480px;
+    }
+
+    &__btn {
+    }
+  }
+
+}

@@ -1,0 +1,40 @@
+body {
+  font-family: $font-family-text-normal;
+}
+
+.icon {
+  font-family: $font-family-icon;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+.row_flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: $font-family-text-bolder;
+
+  border: 2px solid #030303;
+  border-radius: 1px;
+
+  cursor: pointer;
+
+  .btn-text {
+    display: block;
+  }
+}
